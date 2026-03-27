@@ -136,6 +136,26 @@
     .priority-medium { color: #e67e22; }
     .priority-low    { color: #2e8b2e; }
 
+    .address-bar {
+      background: #f0f6ff;
+      border-bottom: 1px solid #d0e4fb;
+      padding: 8px 20px;
+      font-size: 12px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .address-label {
+      color: #6a6d70;
+      font-weight: 600;
+    }
+
+    .address-value {
+      color: #32363a;
+      font-weight: 500;
+    }
+
     .footer {
       padding: 8px 20px;
       font-size: 11px;
@@ -148,13 +168,18 @@
 
   <div class="header">
     <div class="header-icon">W</div>
-    <h1>Werkorders</h1>
-    <span class="subheader">Ophaalmoment: 26-03-2026 08:41 &nbsp;|&nbsp; Systeem: S/4HANA PRD &nbsp;|&nbsp; WML – Waterleiding Maatschappij Limburg</span>
+    <h1>Historische werkorders</h1>
+    <span class="subheader">Ophaalmoment: 27-03-2026 09:14 &nbsp;|&nbsp; Systeem: S/4HANA PRD</span>
+  </div>
+
+  <div class="address-bar">
+    <span class="address-label">Adres:</span>
+    <span class="address-value">Limburglaan 10, 6229 GA Maastricht</span>
   </div>
 
   <div class="toolbar">
     <span>Resultaten:</span>
-    <span class="badge">8</span>
+    <span class="badge">3</span>
   </div>
 
   <div class="table-wrapper">
@@ -164,82 +189,42 @@
           <th>Werkorder nr.</th>
           <th>Omschrijving</th>
           <th>Status</th>
-          <th>Prioriteit</th>
           <th>Datum aanmaak</th>
+          <th>Datum afgerond</th>
           <th>Medewerker</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="wo-number">WO-100421</td>
-          <td>Vervanging watermeter – Mgr. Claessenstraat 14, Maastricht</td>
-          <td><span class="status status-progress">In behandeling</span></td>
-          <td class="priority-high">Hoog</td>
-          <td>18-03-2026</td>
-          <td>J. de Vries</td>
-        </tr>
-        <tr>
-          <td class="wo-number">WO-100418</td>
-          <td>Periodieke ijking watermeter – Wilhelminasingel 45, Roermond</td>
-          <td><span class="status status-open">Open</span></td>
-          <td class="priority-medium">Midden</td>
-          <td>17-03-2026</td>
+          <td class="wo-number">8441902736</td>
+          <td>Periodieke ijking watermeter</td>
+          <td><span class="status status-done">Afgerond</span></td>
+          <td>04-02-2025</td>
+          <td>06-02-2025</td>
           <td>R. Bakker</td>
         </tr>
         <tr>
-          <td class="wo-number">WO-100415</td>
-          <td>Storing watermeter (geen doorstroom) – Markt 8, Venlo</td>
+          <td class="wo-number">8318574021</td>
+          <td>Vervanging defecte watermeter</td>
           <td><span class="status status-done">Afgerond</span></td>
-          <td class="priority-high">Hoog</td>
-          <td>15-03-2026</td>
-          <td>M. Jansen</td>
-        </tr>
-        <tr>
-          <td class="wo-number">WO-100412</td>
-          <td>Plaatsing nieuwe watermeter – Nieuwstraat 3, Heerlen</td>
-          <td><span class="status status-hold">On hold</span></td>
-          <td class="priority-medium">Midden</td>
-          <td>14-03-2026</td>
-          <td>K. Smit</td>
-        </tr>
-        <tr>
-          <td class="wo-number">WO-100409</td>
-          <td>Uitlezen slimme meter – Stationsplein 22, Sittard</td>
-          <td><span class="status status-progress">In behandeling</span></td>
-          <td class="priority-low">Laag</td>
-          <td>12-03-2026</td>
+          <td>11-05-2024</td>
+          <td>13-05-2024</td>
           <td>J. de Vries</td>
         </tr>
         <tr>
-          <td class="wo-number">WO-100406</td>
-          <td>Lekkage bij meterkast – Koningin Julianaplein 1, Weert</td>
+          <td class="wo-number">8207163489</td>
+          <td>Plaatsing slimme watermeter</td>
           <td><span class="status status-done">Afgerond</span></td>
-          <td class="priority-high">Hoog</td>
-          <td>10-03-2026</td>
-          <td>R. Bakker</td>
-        </tr>
-        <tr>
-          <td class="wo-number">WO-100403</td>
-          <td>Controle meterstand na klachtmelding – Dorpstraat 77, Echt</td>
-          <td><span class="status status-open">Open</span></td>
-          <td class="priority-medium">Midden</td>
-          <td>07-03-2026</td>
+          <td>22-09-2023</td>
+          <td>22-09-2023</td>
           <td>M. Jansen</td>
-        </tr>
-        <tr>
-          <td class="wo-number">WO-100400</td>
-          <td>Verplaatsing watermeter – Parallelweg 9, Kerkrade</td>
-          <td><span class="status status-done">Afgerond</span></td>
-          <td class="priority-low">Laag</td>
-          <td>05-03-2026</td>
-          <td>K. Smit</td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <div class="footer">
-    Gegevens afkomstig uit SAP S/4HANA &nbsp;|&nbsp; WML – Waterleiding Maatschappij Limburg &nbsp;|&nbsp; Regio: Limburg
+    Gegevens afkomstig uit SAP S/4HANA &nbsp;|&nbsp; WML – Waterleiding Maatschappij Limburg
   </div>
 
 </body>
